@@ -1,0 +1,16 @@
+---
+title: "Webpage"
+author: "Duy Tung"
+date: "7/17/2019"
+output: html_document
+---
+
+
+
+```{r}
+library(leaflet)
+
+my_map <- leaflet() %>% addTiles() 
+my_map <- my_map %>% addMarkers(lat=20.0277, lng= 105.8341, popup="My Office")
+my_map
+```
